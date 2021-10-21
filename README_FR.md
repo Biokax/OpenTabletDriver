@@ -4,7 +4,6 @@
 
 English | [한국어](README_KO.md) | [Español](README_ES.md) | [Русский](README_RU.md) | [简体中文](README_CN.md) | [Français](README_FR.md)
 
-OpenTabletDriver is an open source, cross platform, user mode tablet driver. The goal of OpenTabletDriver is to be cross platform as possible with the highest compatibility in an easily configurable graphical user interface.
 OpenTabletDriver est un driver de tablette en mode utilisateur, open source et multiplateforme. Le but d'OpenTabletDriver est d'être le plus multiplateforme que possible avec la plus grande compatibilité avec une interface graphique utilisateur facilement configurable.
 
 <p align="middle">
@@ -15,17 +14,20 @@ OpenTabletDriver est un driver de tablette en mode utilisateur, open source et m
 
 # Tablettes supportées
 
-All statuses of tablets that are supported, untested, and planned to be supported can be found here. Common issue workarounds can be found in the wiki for your platform.
+Tous les modèles de tablettes supportées, non testées, et prévus pour être supporté peuvent-être trouvés ici. Des solutions de contournement peuvent-être trouvés sur le wiki pour votre plateforme.
 
-- [Supported Tablets](https://github.com/OpenTabletDriver/OpenTabletDriver/blob/master/TABLETS.md)
+- [Tablettes supportées](https://github.com/OpenTabletDriver/OpenTabletDriver/blob/master/TABLETS.md)
 
 # Installation
 
-- [Installation guide](https://github.com/OpenTabletDriver/OpenTabletDriver/wiki/Installation-Guide)
+- [Guide d'installation](https://github.com/OpenTabletDriver/OpenTabletDriver/wiki/Installation-Guide)
 
-# Running OpenTabletDriver binaries
+# Exécuter un binaire OpenTabletDriver
 
 OpenTabletDriver functions as two separate processes that interact with each other seamlessly. The active program that does all of the tablet data handling is `OpenTabletDriver.Daemon`, while the GUI frontend is `OpenTabletDriver.UX.*`, where `*` depends on your platform<sup>1</sup>. The daemon must be started in order for anything to work, however the GUI is unnecessary. If you have existing settings, they should apply when the daemon starts.
+
+Le fonctionnement d'OpenTabletDriver est basé sur l'utilisation de deux procéssus séparés qui intéragissent parfaitement entre eux. Le programme actif qui permet le traitement des données est `OpenTabletDriver.Daemon`, tandis que l'interface graphique est `OpenTabletDriver.UX.*`, où `*` dépend de votre plateforme<sup>1</sup>. 
+
 
 > <sup>1</sup>Windows uses `Wpf`, Linux uses `Gtk`, and MacOS uses `MacOS` respectively. This for the most part can be ignored if you don't build it from source as only the correct version will be provided.
 ## Building OpenTabletDriver from source
