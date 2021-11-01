@@ -4,7 +4,7 @@
 
 English | [한국어](README_KO.md) | [Español](README_ES.md) | [Русский](README_RU.md) | [简体中文](README_CN.md) | [Français](README_FR.md)
 
-OpenTabletDriver est un driver de tablette en mode utilisateur, open source et multiplateforme. Le but d'OpenTabletDriver est d'être le plus multiplateforme que possible avec la plus grande compatibilité avec une interface graphique utilisateur facilement configurable.
+OpenTabletDriver est un driver de tablette en mode utilisateur, open source et multiplateforme. Le but d'OpenTabletDriver est d'être le plus multiplateforme que possible, avec la plus grande compatibilité ainsi qu'une interface graphique utilisateur facilement configurable.
 
 <p align="middle">
   <img src="https://i.imgur.com/XDYf62e.png" width="410" align="middle"/>
@@ -24,23 +24,22 @@ Tous les modèles de tablettes supportées, non testées, et prévus pour être 
 
 # Exécuter un binaire OpenTabletDriver
 
-OpenTabletDriver functions as two separate processes that interact with each other seamlessly. The active program that does all of the tablet data handling is `OpenTabletDriver.Daemon`, while the GUI frontend is `OpenTabletDriver.UX.*`, where `*` depends on your platform<sup>1</sup>. The daemon must be started in order for anything to work, however the GUI is unnecessary. If you have existing settings, they should apply when the daemon starts.
-
-Le fonctionnement d'OpenTabletDriver est basé sur l'utilisation de deux procéssus séparés qui intéragissent parfaitement entre eux. Le programme actif qui permet le traitement des données est `OpenTabletDriver.Daemon`, tandis que l'interface graphique est `OpenTabletDriver.UX.*`, où `*` dépend de votre plateforme<sup>1</sup>. 
+Le fonctionnement d'OpenTabletDriver est basé sur l'utilisation de deux procéssus séparés qui intéragissent parfaitement entre eux. Le programme actif qui permet le traitement des données est `OpenTabletDriver.Daemon`, tandis que l'interface graphique est `OpenTabletDriver.UX.*`, où `*` dépend de votre plateforme<sup>1</sup>. Pour que tout fonctionne corectement, Le programme actif daemon doit être exécuté. Si vous avez des paramètres existants, ils vont s'appliquer lors de l'exécution du daemon.
 
 
-> <sup>1</sup>Windows uses `Wpf`, Linux uses `Gtk`, and MacOS uses `MacOS` respectively. This for the most part can be ignored if you don't build it from source as only the correct version will be provided.
-## Building OpenTabletDriver from source
+> <sup>1</sup>Windows utilise `Wpf`, Linux utilise `Gtk`, et MacOS utilise `MacOS` respectivement. Celà peut-être ignoré dans la plupart des cas si vous ne tentez pas de build à partir de la source, car seule la bonne version sera fournie.
 
-The requirements to build OpenTabletDriver are consistent across all platforms. Running OpenTabletDriver on each platform requires different dependencies.
+## Build OpenTabletDriver à partir de la source
 
-### All platforms
+Les exigences pour build OpenTabletDriver sont cohérentes sur toutes les plateformes. L'éxécution d'OpenTabletDriver requière des dépendances différentes.
+
+### Toutes les plateformes
 
 - .NET 5 SDK
 
 #### Windows
 
-No other dependencies.
+Aucune autre dépendance.
 
 #### Linux
 
@@ -49,44 +48,49 @@ No other dependencies.
 - libevdev2
 - GTK+3
 
-#### MacOS [Experimental]
+#### MacOS [Expérimental]
 
-No other dependencies.
+Aucune autre dépendance.
 
-# Features
+# Fonctionnalités
 
-- Fully platform-native GUI
+- GUI entièrement natif pour toutes les plateformes
   - Windows: `Windows Presentation Foundation`
   - Linux: `GTK+3`
   - MacOS: `MonoMac`
-- Fully fledged console tool
-  - Quickly acquire, change, load, or save settings
-  - Scripting support (json output)
-- Absolute cursor positioning
-  - Screen area and tablet area
-  - Center-anchored offsets
-  - Precise area rotation
-- Relative cursor positioning
-  - px/mm horizontal and vertical sensitivity
-- Pen bindings
-  - Tip by pressure bindings
-  - Express key bindings
-  - Pen button bindings
-  - Mouse button bindings
-  - Keyboard bindings
-  - External plugin bindings
-- Saving and loading settings
-  - Auto-loads user settings via `settings.json` in the active user `%localappdata%` or `.config` settings root directory.
-- Configuration Editor
-  - Allows you to create, modify, and delete configurations.
-  - Generate configurations from visible HID devices
+- Outil de console à part entière
+  - Obtient, modifie, charge ou sauvegarde rapidement les paramètres
+  - Support de script (sortie json)
+- Positionnement absolu du curseur
+  - Zone de l'écran ainsi que la zone de la tablette
+  - Décalages ancrés au centre
+  - Rotations précises de la zone
+- Positionnement relatif du curseur
+  - Sensibilité horizontal et vertical (px/mm)
+- Raccourcis stylet
+
+
+  - Tip by pressure bindings // A TRAD
+  - Express key bindings // A TRAD
+
+
+
+  - Raccourcis boutons stylet
+  - Raccourcis boutons souris
+  - Raccourcis clavier
+  - Plugin de raccourcis externe
+- Sauvegarder et charger des paramètres
+  - Charge automatiquement les paramètres utilisateur via `settings.json` dans l'utilisateur actif `%localappdata%` ou le `.config` dans le dossier répertoire racine des paramètres.
+- Éditeur de configuration
+  - Vous permez de creer, modifier et de supprimer des configurations.
+  - Génère des configurations venant des appareils HID visibles
 - Plugins
-  - Filters
-  - Output modes
-  - Tools
+  - Filtres
+  - Modes de sorties
+  - Outils
 
-# Contributing to OpenTabletDriver
+# Contribuer à OpenTabletDriver
 
-If you wish to contribute to OpenTabletDriver, check out the [issue tracker](https://github.com/OpenTabletDriver/OpenTabletDriver/issues).
+Si vous souhaitez contribuer à OpenTabletDriver, regardez le [Traqueur d'incidents](https://github.com/OpenTabletDriver/OpenTabletDriver/issues).
 
-If you have any issues or suggestions, [open an issue ticket](https://github.com/OpenTabletDriver/OpenTabletDriver/issues/new/choose).
+Si vous avez des problèmes ou des suggestions, [ouvrir un ticket](https://github.com/OpenTabletDriver/OpenTabletDriver/issues/new/choose).
