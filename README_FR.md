@@ -82,7 +82,7 @@ Aucune autre dépendance.
 - Sauvegarder et charger des paramètres
   - Charge automatiquement les paramètres utilisateur via `settings.json` dans l'utilisateur actif `%localappdata%` ou le `.config` du dossier répertoire racine des paramètres.
 - Éditeur de configuration
-  - Vous permez de creer, modifier et de supprimer des configurations.
+  - Vous permets de créer, modifier ou supprimer des configurations.
   - Génère des configurations venant des appareils HID visibles
 - Plugins
   - Filtres
