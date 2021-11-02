@@ -63,7 +63,7 @@ Aucune autre dépendance.
   - Support de script (sortie json)
 - Positionnement absolu du curseur
   - Zone de l'écran ainsi que la zone de la tablette
-  - Décalages ancrés au centre
+  - Décalages par rapport au centre
   - Rotations précises de la zone
 - Positionnement relatif du curseur
   - Sensibilité horizontal et vertical (px/mm)
