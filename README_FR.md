@@ -67,7 +67,7 @@ Aucune autre dépendance.
   - Rotations précises de la zone
 - Positionnement relatif du curseur
   - Sensibilité horizontal et vertical (px/mm)
-- Raccourcis stylet
+- Raccourcis du stylet
 
 
   - Tip by pressure bindings // A TRAD
