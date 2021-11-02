@@ -14,7 +14,7 @@ OpenTabletDriver est un driver de tablette en mode utilisateur, open source et m
 
 # Tablettes supportées
 
-Tous les modèles de tablettes supportées, non testées, et prévus pour être supporté peuvent-être trouvés ici. Des solutions de contournement peuvent-être trouvés sur le wiki pour votre plateforme.
+Tous les modèles de tablettes supportés, non testées, et prévus pour être supportés peuvent-être trouvés ici. Des solutions alternatives peuvent-être trouvées sur le wiki pour votre plateforme.
 
 - [Tablettes supportées](https://github.com/OpenTabletDriver/OpenTabletDriver/blob/master/TABLETS.md)
 
