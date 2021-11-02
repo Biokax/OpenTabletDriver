@@ -93,4 +93,4 @@ Aucune autre dépendance.
 
 Si vous souhaitez contribuer à OpenTabletDriver, regardez le [Traqueur d'incidents](https://github.com/OpenTabletDriver/OpenTabletDriver/issues).
 
-Si vous avez des problèmes ou des suggestions, [ouvrir un ticket](https://github.com/OpenTabletDriver/OpenTabletDriver/issues/new/choose).
+Si vous avez des problèmes ou des suggestions, [ouvrez un ticket](https://github.com/OpenTabletDriver/OpenTabletDriver/issues/new/choose).
