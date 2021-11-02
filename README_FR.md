@@ -24,7 +24,7 @@ Tous les modèles de tablettes supportés, non testées, et prévus pour être s
 
 # Exécuter un binaire OpenTabletDriver
 
-Le fonctionnement d'OpenTabletDriver est basé sur l'utilisation de deux procéssus séparés qui intéragissent parfaitement entre eux. Le programme actif qui permet le traitement des données est `OpenTabletDriver.Daemon`, tandis que l'interface graphique est `OpenTabletDriver.UX.*`, où `*` dépend de votre plateforme<sup>1</sup>. Pour que tout fonctionne corectement, Le programme actif daemon doit être exécuté. Si vous avez des paramètres existants, ils vont s'appliquer lors de l'exécution du daemon.
+Le fonctionnement d'OpenTabletDriver est basé sur l'utilisation de deux processus séparés qui interagissent parfaitement entre eux. Le programme actif qui permet le traitement des données est `OpenTabletDriver.Daemon`, tandis que l'interface graphique est `OpenTabletDriver.UX.*`, où `*` dépend de votre plateforme<sup>1</sup>. Pour que tout fonctionne correctement, Le programme actif daemon doit être exécuté. Si vous avez des paramètres existants, ils vont s'appliquer lors de son exécution.
 
 
 > <sup>1</sup>Windows utilise `Wpf`, Linux utilise `Gtk`, et MacOS utilise `MacOS` respectivement. Celà peut-être ignoré dans la plupart des cas si vous ne tentez pas de build à partir de la source, car seule la bonne version sera fournie.
